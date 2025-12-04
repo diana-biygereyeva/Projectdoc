@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ontwerpdocumentatie Diana Biygereyeva 1GDM2</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/flexboxes.css" />
+    <link rel="stylesheet" href="assets/nav.css" />
+    <link rel="stylesheet" href="assets/typography.css" />
+    <link href="dist/output.css" rel="stylesheet" />
+  </head>
+
+  <body class="bg-gray-100 text-gray-800 min-h-screen p-10">
+    <!-- NAVBAR -->
+    <nav
+      id="navbar"
+      class="bg-white shadow fixed top-0 left-0 w-full z-50 transition-all duration-300"
+    >
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <!-- Logo -->
+          <div class="text-xl font-bold text-wlate-600">
+            <a href="index.html" data-link="home">
+              <h1>Lost in Tra(i)nslation</h1>
+            </a>
+          </div>
+
+          <!-- Mobile menu button -->
+          <button id="nav-toggle" class="md:hidden text-2xl focus:outline-none">
+            ☰
+          </button>
+
+          <!-- Desktop links -->
+          <ul id="nav-links" class="hidden md:flex space-x-4 text-gray-700">
+            <li>
+              <a href="week 01.html" class="nav-link hover:text-slate-100"
+                >Week 01</a
+              >
+            </li>
+            <li>
+              <a href="week 02.html" class="nav-link hover:text-slate-100"
+                >Week 02</a
+              >
+            </li>
+            <li>
+              <a href="week 03.html" class="nav-link hover:text-slate-100"
+                >Week 03</a
+              >
+            </li>
+            <li>
+              <a href="week 04.html" class="nav-link hover:text-slate-100"
+                >Week 04</a
+              >
+            </li>
+            <li>
+              <a href="week 05.html" class="nav-link hover:text-slate-100"
+                >Week 05</a
+              >
+            </li>
+            <li>
+              <a href="week 06.html" class="nav-link hover:text-slate-100"
+                >Week 06</a
+              >
+            </li>
+            <li>
+              <a href="week 07.html" class="nav-link hover:text-slate-100"
+                >Week 07</a
+              >
+            </li>
+            <li>
+              <a href="week 08.html" class="nav-link hover:text-slate-100"
+                ><s>Week 08</s></a
+              >
+            </li>
+            <li>
+              <a href="week 09.html" class="nav-link hover:text-slate-100"
+                >Week 09</a
+              >
+            </li>
+            <li>
+              <a href="week 10.html" class="nav-link hover:text-slate-100"
+                >Week 10</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Mobile dropdown -->
+        <ul
+          id="nav-mobile"
+          class="hidden md:hidden flex flex-col space-y-2 pb-4 text-gray-700 font-medium overflow-hidden max-h-0 transition-all duration-300"
+        >
+          <li>
+            <a href="week 01.html" class="nav-link hover:text-slate-100"
+              >Week 01</a
+            >
+          </li>
+          <li>
+            <a href="week 02.html" class="nav-link hover:text-slate-100"
+              >Week 02</a
+            >
+          </li>
+          <li>
+            <a href="week 03.html" class="nav-link hover:text-slate-100"
+              >Week 03</a
+            >
+          </li>
+          <li>
+            <a href="week 04.html" class="nav-link hover:text-slate-100"
+              >Week 04</a
+            >
+          </li>
+          <li>
+            <a href="week 05.html" class="nav-link hover:text-slate-100"
+              >Week 05</a
+            >
+          </li>
+          <li>
+            <a href="week 06.html" class="nav-link hover:text-slate-100"
+              >Week 06</a
+            >
+          </li>
+          <li>
+            <a href="week 07.html" class="nav-link hover:text-slate-100"
+              >Week 07</a
+            >
+          </li>
+          <li>
+            <a href="week 08.html" class="nav-link hover:text-slate-100"
+              ><s>Week 08</s></a
+            >
+          </li>
+          <li>
+            <a href="week 09.html" class="nav-link hover:text-slate-100"
+              >Week 09</a
+            >
+          </li>
+          <li>
+            <a href="week 10.html" class="nav-link hover:text-slate-100"
+              >Week 10</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <div class="container max-w-4xl mx-auto px-4">
+      <section class="prose prose-neutral max-w-none mt-12">
+        <h2 class="text-2xl font-semibold text-indigo-700 mb-10">Lesweek 4</h2>
+
+        <h2 class="text-2xl font-semibold text-indigo-700 mb-10">
+          <mark
+            >Focus: Prototyping van schermen in HTML, kleurthema’s & eerste
+            digitale prototypes</mark
+          >
+        </h2>
+
+        <br />
+
+        <!-- KEUZES -->
+        <div
+          class="bg-white p-10 rounded-2xl shadow mb-12 border border-indigo-100"
+        >
+          <h3 class="text-xl font-bold text-slate-700 mb-6">
+            Experimenten & aanpak
+          </h3>
+
+          <h4 class="font-semibold text-slate-800 mt-6">
+            1. HTML-generatie via ChatGPT
+          </h4>
+          <p>
+            Eén of meerdere schermen werden geprobeerd te genereren in HTML
+            zoals gevraagd in de les.
+          </p>
+
+          <p class="mt-4">
+            <strong>Ervaring:</strong> Weinig controle over positionering,
+            spacing en exacte kleuren. Het resultaat voelde beperkt en
+            onpersoonlijk.
+          </p>
+
+          <p class="mt-4">
+            <strong>Conclusie:</strong> Beter eerst zelf schetsen en begrijpen
+            hoe elk scherm werkt voordat het digitaal wordt uitgewerkt.
+          </p>
+
+          <br />
+
+          <h4 class="font-semibold text-slate-800 mt-8">
+            2. Zelfstandige uitvoering
+          </h4>
+          <ul class="list-disc ml-8">
+            <li>Schermen volledig zelf uitgewerkt in HTML/CSS.</li>
+            <li>Volledige controle over layout, kleuren en typografie.</li>
+            <li>
+              Kleurthema geïnspireerd op Belgische vlag:
+              <ul class="list-disc ml-6">
+                <li>Zwart: #080708</li>
+                <li>Wit: #F2F2F3</li>
+                <li>Geel: #F3D154 & #FFF4CB</li>
+                <li>Rood: #A60311</li>
+              </ul>
+            </li>
+            <li>
+              Opmerking: bewust geen blauwe accenten om het thema consequent te
+              houden.
+            </li>
+          </ul>
+
+          <br />
+
+          <h4 class="font-semibold text-slate-800 mt-8">
+            3. Belangrijkste inzichten
+          </h4>
+          <ul class="list-disc ml-8">
+            <li>
+              ChatGPT was vooral nuttig bij oplossen van foutmeldingen, niet bij
+              het initiële ontwerp.
+            </li>
+            <li>
+              Zelf implementeren van HTML/CSS hielp om componenten, structuren
+              en kleuren beter te begrijpen.
+            </li>
+            <li>
+              Visuele hiërarchie en kleurcontrasten zijn nu duidelijker, vooral
+              bij functies in het wagonindelingsscherm.
+            </li>
+          </ul>
+        </div>
+
+        <!-- AFBEELDINGEN sectie -->
+        <div class="my-12 flex justify-center">
+          <img
+            src="public/img/LW04_1.jpg"
+            class="max-w-full h-auto rounded-2xl shadow-lg"
+          />
+        </div>
+        <br />
+        <div class="my-12 flex justify-center">
+          <img
+            src="public/img/LW04_2.jpg"
+            class="max-w-full h-auto rounded-2xl shadow-lg"
+          />
+        </div>
+        <br />
+        <div class="my-12 flex justify-center">
+          <img
+            src="public/img/LW04_3.jpg"
+            class="max-w-full h-auto rounded-2xl shadow-lg"
+          />
+        </div>
+
+        <!-- UX-VRAGEN -->
+        <div
+          class="bg-indigo-50 p-10 rounded-2xl shadow mb-12 border border-indigo-100"
+        >
+          <h3 class="text-xl font-bold text-slate-700 mb-6">
+            UX/UI-vragen die richting gaven
+          </h3>
+          <ul class="list-disc ml-8 leading-relaxed">
+            <li>
+              Hoe maak ik digitale prototypes die ook voor niet-designers
+              duidelijk zijn?
+            </li>
+            <li>
+              Welke rol spelen kleuren en contrasten bij snelle herkenning van
+              functies (bv. 1e vs. 2e klas)?
+            </li>
+            <li>
+              Hoeveel interactiviteit is nodig om de werking van schermen
+              duidelijk te maken zonder extra uitleg?
+            </li>
+          </ul>
+        </div>
+
+        <!-- USABILITY CHECKS -->
+        <div
+          class="bg-green-50 p-10 rounded-2xl shadow border border-green-100 mb-12"
+        >
+          <h3 class="text-xl font-bold text-slate-700 mb-6">
+            Resultaten van snelle tests
+          </h3>
+
+          <ul class="list-disc ml-8 leading-relaxed">
+            <li>
+              HTML-prototypes gaven beter inzicht in spacing en layout dan
+              automatisch gegenereerde versies.
+            </li>
+            <li>
+              Kleuren helpen functies snel te onderscheiden: geel = standaard,
+              rood = waarschuwing/actie, wit = neutrale achtergrond.
+            </li>
+            <li>
+              Consistent gebruik van labels blijft essentieel; iconen alleen
+              zijn nog niet altijd universeel begrijpelijk.
+            </li>
+          </ul>
+        </div>
+
+        <!-- VOLGENDE STAPPEN -->
+        <div class="bg-white p-10 rounded-2xl shadow border border-indigo-100">
+          <h3 class="text-xl font-bold text-slate-700 mb-6">
+            Volgende stappen
+          </h3>
+
+          <ul class="list-disc ml-8 leading-relaxed">
+            <li>
+              Doorontwikkelen van digitale prototypes in Figma/HTML met
+              volledige kleurthema’s.
+            </li>
+            <li>
+              Testen van iconen en kleurgebruik met gebruikers om herkenbaarheid
+              en toegankelijkheid te controleren.
+            </li>
+            <li>
+              Eventueel experimenteren met animaties of hover-states om functies
+              visueel beter uit te leggen.
+            </li>
+            <li>
+              Evalueren of tekstlabels kunnen worden verminderd na
+              herkenbaarheidstesten.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script>
+      document.querySelectorAll(".accordion-btn").forEach((button) => {
+        button.addEventListener("click", () => {
+          const content = button.nextElementSibling;
+          content.classList.toggle("hidden");
+          const icon = button.querySelector("span");
+          icon.textContent = content.classList.contains("hidden") ? "+" : "-";
+        });
+      });
+
+      const navToggle = document.getElementById("nav-toggle");
+      const navMobile = document.getElementById("nav-mobile");
+      const navLinks = document.querySelectorAll(".nav-link");
+      const navbar = document.getElementById("navbar");
+
+      navToggle.addEventListener("click", () => {
+        if (navMobile.classList.contains("hidden")) {
+          navMobile.classList.remove("hidden");
+          navMobile.style.maxHeight = navMobile.scrollHeight + "px";
+        } else {
+          navMobile.style.maxHeight = "0px";
+          setTimeout(() => navMobile.classList.add("hidden"), 300);
+        }
+      });
+
+      function setActiveLink(name) {
+        navLinks.forEach((link) => {
+          if (link.dataset.link === name) {
+            link.classList.add("text-blue-600", "font-semibold");
+          } else {
+            link.classList.remove("text-blue-600", "font-semibold");
+          }
+        });
+      }
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          const page = link.dataset.link;
+          setActiveLink(page);
+        });
+      });
+
+      let lastScrollTop = 0;
+
+      window.addEventListener("scroll", () => {
+        const scrollPos =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollPos > lastScrollTop && scrollPos > 50) {
+          navbar.style.transform = "translateY(-100%)";
+        } else {
+          navbar.style.transform = "translateY(0)";
+        }
+
+        lastScrollTop = scrollPos <= 0 ? 0 : scrollPos;
+      });
+    </script>
+
+    <br />
+    <footer>© 2025 Diana Biygereyeva 1GDM2</footer>
+  </body>
+</html>
