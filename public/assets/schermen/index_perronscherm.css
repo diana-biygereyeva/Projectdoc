@@ -1,0 +1,1040 @@
+
+/* --- FIXED RESOLUTION 1920x1080 --- */
+html, body {
+    width: 1080px;
+    height: 1920px;
+    margin: 0;
+    padding: 0;
+    background:#000000;
+    position: relative;
+    overflow-x: hidden; /* horizontale scroll voorkomen */
+}
+
+/* --- ALGEMENE FIX VOOR ALLE PNG POSITIES --- */
+.fixed-left {
+    position: absolute;
+    left: 0;
+    width: auto;
+    height: auto;
+    pointer-events: none;
+}
+
+/* --- BOVENSTE RECHTS: RODE ACHTERGROND + KLOK --- */
+#top-right-clock {
+    position: absolute;
+    top: 0; /* tegen zwarte balk */
+    right: 0;
+    height: 100px; /* pas aan naar de hoogte van jouw PNG */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#top-right-clock img {
+    height: 100%;
+}
+
+#top-right-clock .perronscherm-text17 {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 36px;
+    color: white;
+}
+
+
+.perronscherm-container1 {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.perronscherm-perronscherm {
+  width: 100%;
+  height: 1920px;
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 3px;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 1);
+}
+ 
+.perronscherm-rectangle291 {
+  top: 168px;
+  left: 3px;
+  width: 1074px;
+  height: 526px;
+  position: absolute;
+}
+ 
+.perronscherm-maskgroup1 {
+  top: 168px;
+  left: 0px;
+  width: 1074px;
+  height: 526px;
+  position: absolute;
+}
+ 
+.perronscherm-text10 {
+  top: 398px;
+  left: 101px;
+  color: rgb(0, 0, 0);
+  width: 952px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Ubuntu;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-text11 {
+  font-weight: 700;
+}
+ 
+.perronscherm-text12 {
+  font-weight: 700;
+}
+ 
+.perronscherm-text15 {
+  top: 224px;
+  left: 95px;
+  color: rgba(0, 0, 0, 1);
+  width: 519px;
+  height: auto;
+  position: absolute;
+  font-size: 70px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Ubuntu;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-text16 {
+  top: 582px;
+  left: 802px;
+  color: rgba(0, 0, 0, 1);
+  width: 145px;
+  height: auto;
+  position: absolute;
+  font-size: 64px;
+  font-style: Medium;
+  text-align: right;
+  font-family: Ubuntu;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-rectangle51 {
+  top: -75px;
+  left: -1px;
+  width: 1084px;
+  height: 308px;
+  position: absolute;
+  object-fit: cover;
+  margin-right: var(--dl-layout-space-sixunits);
+  object-position: center;
+}
+ 
+.perronscherm-rectangle52 {
+  top: 21px;
+  right: -2px;
+  width: 503px;
+  height: 117px;
+  position: absolute;
+  border-radius: 0 0 0 126px;
+}
+ 
+.perronscherm-rectangle26 {
+  top: 799px;
+  right: 1px;
+  width: 1074px;
+  height: 112px;
+  position: absolute;
+}
+ 
+.perronscherm-rectangle28 {
+  top: 1241px;
+  right: 1px;
+  width: 1074px;
+  height: 112px;
+  position: absolute;
+}
+ 
+.perronscherm-rectangle27 {
+  top: 1021px;
+  right: 1px;
+  width: 1074px;
+  height: 112px;
+  position: absolute;
+}
+ 
+.perronscherm-rectangle30 {
+  right: 1px;
+  width: 1074px;
+  bottom: 122px;
+  height: 112px;
+  position: absolute;
+}
+ 
+.perronscherm-rectangle292 {
+  top: 1466px;
+  right: 1px;
+  width: 1074px;
+  height: 112px;
+  position: absolute;
+}
+ 
+.perronscherm-text17 {
+  top: 41px;
+  color: rgba(255, 255, 255, 1);
+  right: 96px;
+  width: 274px;
+  height: auto;
+  position: absolute;
+  font-size: 64px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Ubuntu;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-text18 {
+  top: 223px;
+  left: 693px;
+  color: rgba(0, 0, 0, 1);
+  width: 274px;
+  height: auto;
+  position: absolute;
+  font-size: 64px;
+  font-style: Medium;
+  text-align: right;
+  font-family: Ubuntu;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-vector {
+  top: 27px;
+  left: 82px;
+  width: 99px;
+  height: 117px;
+  position: absolute;
+}
+ 
+.perronscherm-text19 {
+  top: 49px;
+  left: 228px;
+  color: rgba(255, 255, 255, 1);
+  width: 374px;
+  height: auto;
+  position: absolute;
+  font-size: 64px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-text20 {
+  top: 491px;
+  left: 101px;
+  color: rgb(0, 0, 0);
+  width: 826px;
+  height: auto;
+  position: absolute;
+  font-size: 27px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Ubuntu;
+  font-weight: 400;
+  line-height: 130.771112%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-text21 {
+  font-weight: 400;
+}
+ 
+.perronscherm-text22 {
+  font-weight: 700;
+}
+ 
+.perronscherm-text23 {
+  font-weight: 400;
+}
+ 
+.perronscherm-text24 {
+  font-weight: 700;
+}
+ 
+.perronscherm-text25 {
+  font-weight: 400;
+}
+ 
+.perronscherm-text26 {
+  font-weight: 700;
+}
+ 
+.perronscherm-text27 {
+  font-weight: 400;
+}
+ 
+.perronscherm-text28 {
+  font-weight: 400;
+}
+ 
+.perronscherm-text29 {
+  font-weight: 700;
+}
+ 
+.perronscherm-text30 {
+  font-weight: 400;
+}
+ 
+.perronscherm-text31 {
+  font-style: normal;
+  font-weight: 700;
+}
+ 
+.perronscherm-component181 {
+  top: 709px;
+  left: 101px;
+  width: 881px;
+  height: 92px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+ 
+.perronscherm-text32 {
+  left: 805px;
+  color: rgba(255, 0, 0, 1);
+  width: 96px;
+  height: auto;
+  position: absolute;
+  font-size: 36px;
+  font-style: Medium;
+  text-align: right;
+  font-family: Ubuntu;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-text33 {
+  top: 16px;
+  left: 701px;
+  color: rgba(0, 0, 0, 1);
+  width: 139px;
+  height: auto;
+  position: absolute;
+  font-size: 45px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-text34 {
+  top: 44px;
+  left: 2px;
+  color: rgb(0, 0, 0);
+  width: 675px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Medium;
+  text-align: left;
+  font-family: "Ubuntu";
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-text35 {
+  top: 1px;
+  color: rgba(0, 0, 0, 1);
+  width: 675px;
+  height: auto;
+  position: absolute;
+  font-size: 36px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Ubuntu;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-component182 {
+  top: 930px;
+  left: 101px;
+  width: 881px;
+  height: 92px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+ 
+.perronscherm-text36 {
+  top: 16px;
+  left: 701px;
+  color: rgba(0, 0, 0, 1);
+  width: 139px;
+  height: auto;
+  position: absolute;
+  font-size: 45px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-text37 {
+  top: 46px;
+  color: rgba(0, 0, 0, 1);
+  width: 675px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Ubuntu;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-text38 {
+  top: 1px;
+  color: rgba(0, 0, 0, 1);
+  width: 675px;
+  height: auto;
+  position: absolute;
+  font-size: 36px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Ubuntu;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-component30 {
+  top: 1702px;
+  left: 101px;
+  width: 881px;
+  height: 92px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+ 
+.perronscherm-text39 {
+  top: 10px;
+  color: rgba(0, 0, 0, 1);
+  right: 47px;
+  width: 139px;
+  height: auto;
+  position: absolute;
+  font-size: 45px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-text40 {
+  top: 46px;
+  color: rgba(0, 0, 0, 1);
+  width: 675px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Ubuntu;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-text41 {
+  top: 1px;
+  color: rgba(0, 0, 0, 1);
+  width: 675px;
+  height: auto;
+  position: absolute;
+  font-size: 36px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Ubuntu;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-component19 {
+  top: 819px;
+  left: 101px;
+  width: 881px;
+  height: 92px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+ 
+.perronscherm-text42 {
+  top: 16px;
+  left: 701px;
+  color: rgba(0, 0, 0, 1);
+  width: 139px;
+  height: auto;
+  position: absolute;
+  font-size: 45px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-text43 {
+  top: 46px;
+  color: rgb(0, 0, 0);
+  width: 675px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Medium;
+  text-align: left;
+  font-family: "Ubuntu";
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-text44 {
+  top: 1px;
+  color: rgba(0, 0, 0, 1);
+  width: 675px;
+  height: auto;
+  position: absolute;
+  font-size: 36px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Ubuntu;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-component28 {
+  top: 1595px;
+  left: 99px;
+  width: 881px;
+  height: 92px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+ 
+.perronscherm-text45 {
+  top: 16px;
+  left: 701px;
+  color: rgba(0, 0, 0, 1);
+  width: 139px;
+  height: auto;
+  position: absolute;
+  font-size: 45px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-text46 {
+  top: 46px;
+  color: rgba(0, 0, 0, 1);
+  width: 675px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Ubuntu;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-text47 {
+  top: 1px;
+  color: rgb(0, 0, 0);
+  width: 675px;
+  height: auto;
+  position: absolute;
+  font-size: 36px;
+  font-style: Bold;
+  text-align: left;
+  font-family: "Ubuntu";
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-component20 {
+  top: 1266px;
+  left: 101px;
+  width: 881px;
+  height: 92px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+ 
+.perronscherm-text48 {
+  top: 16px;
+  left: 701px;
+  color: rgba(0, 0, 0, 1);
+  width: 139px;
+  height: auto;
+  position: absolute;
+  font-size: 45px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-text49 {
+  top: 46px;
+  color: rgba(0, 0, 0, 1);
+  width: 675px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Ubuntu;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-text50 {
+  top: 1px;
+  color: rgba(0, 0, 0, 1);
+  width: 675px;
+  height: auto;
+  position: absolute;
+  font-size: 36px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Ubuntu;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-component21 {
+  top: 1154px;
+  left: 101px;
+  width: 881px;
+  height: 92px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+ 
+.perronscherm-text51 {
+  top: 16px;
+  left: 701px;
+  color: rgba(0, 0, 0, 1);
+  width: 139px;
+  height: auto;
+  position: absolute;
+  font-size: 45px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-text52 {
+  top: 46px;
+  color: rgba(0, 0, 0, 1);
+  width: 675px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Ubuntu;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-text53 {
+  top: 1px;
+  color: rgba(0, 0, 0, 1);
+  width: 675px;
+  height: auto;
+  position: absolute;
+  font-size: 36px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Ubuntu;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-component22 {
+  top: 1042px;
+  left: 101px;
+  width: 881px;
+  height: 92px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+ 
+.perronscherm-text54 {
+  top: 16px;
+  left: 701px;
+  color: rgba(0, 0, 0, 1);
+  width: 139px;
+  height: auto;
+  position: absolute;
+  font-size: 45px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-text55 {
+  top: 46px;
+  color: rgb(0, 0, 0);
+  width: 675px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Medium;
+  text-align: left;
+  font-family: "Ubuntu";
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-text56 {
+  top: 1px;
+  color: rgba(0, 0, 0, 1);
+  width: 675px;
+  height: auto;
+  position: absolute;
+  font-size: 36px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Ubuntu;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-component31 {
+  top: 1819px;
+  left: 99px;
+  width: 881px;
+  height: 92px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+ 
+.perronscherm-text57 {
+  top: 10px;
+  color: rgba(0, 0, 0, 1);
+  right: 47px;
+  width: 139px;
+  height: auto;
+  position: absolute;
+  font-size: 45px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-text58 {
+  top: 46px;
+  color: rgb(0, 0, 0);
+  width: 675px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Medium;
+  text-align: left;
+  font-family: "Ubuntu";
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-text59 {
+  top: 1px;
+  color: rgba(0, 0, 0, 1);
+  width: 675px;
+  height: auto;
+  position: absolute;
+  font-size: 36px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Ubuntu;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-component23 {
+  top: 1378px;
+  left: 101px;
+  width: 881px;
+  height: 92px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+ 
+.perronscherm-text60 {
+  top: 16px;
+  left: 701px;
+  color: rgb(0, 0, 0);
+  width: 139px;
+  height: auto;
+  position: absolute;
+  font-size: 45px;
+  font-style: Medium;
+  text-align: left;
+  font-family: "Inter";
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-text61 {
+  top: 46px;
+  left: 0px;
+  color: rgb(0, 0, 0);
+  width: 675px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Medium;
+  text-align: left;
+  font-family: "Ubuntu";
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-text62 {
+  top: 1px;
+  color: rgba(0, 0, 0, 1);
+  width: 675px;
+  height: auto;
+  position: absolute;
+  font-size: 36px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Ubuntu;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-component29 {
+  top: 1487px;
+  left: 99px;
+  width: 881px;
+  height: 92px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+ 
+.perronscherm-text63 {
+  top: 16px;
+  left: 701px;
+  color: rgba(0, 0, 0, 1);
+  width: 139px;
+  height: auto;
+  position: absolute;
+  font-size: 45px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-text64 {
+  top: 44px;
+  left: 1px;
+  color: rgb(0, 0, 0);
+  width: 675px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Medium;
+  text-align: left;
+  font-family: "Ubuntu";
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-text65 {
+  top: 1px;
+  color: rgba(0, 0, 0, 1);
+  width: 675px;
+  height: auto;
+  position: absolute;
+  font-size: 36px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Ubuntu;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.perronscherm-link {
+  display: contents;
+}
+ 
+.perronscherm-container2 {
+  right: 50px;
+  border: 1px solid #ffffff5c;
+  bottom: 30px;
+  display: flex;
+  z-index: 22;
+  position: fixed;
+  box-shadow: 5px 5px 10px 0px rgba(31, 31, 31, 0.4);
+  min-height: auto;
+  align-items: center;
+  padding-top: 8px;
+  padding-left: 12px;
+  border-radius: 8px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+  backdrop-filter: blur(6px);
+  background-color: rgba(41, 41, 41, 0.41);
+}
+ 
+.perronscherm-icon1 {
+  width: 24px;
+  margin-right: 4px;
+}
+ 
+.perronscherm-text66 {
+  color: white;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}

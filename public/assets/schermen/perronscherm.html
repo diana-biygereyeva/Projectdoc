@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <title>Perronscherm</title>
+    <meta property="og:title" content="exported project" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <script>
+      // Starttijd instellen (06:00:12)
+      let hours = 6;
+      let minutes = 0;
+      let seconds = 12;
+
+      function updateClock() {
+        seconds++;
+        if (seconds >= 60) {
+          seconds = 0;
+          minutes++;
+        }
+        if (minutes >= 60) {
+          minutes = 0;
+          hours++;
+        }
+        if (hours >= 24) {
+          hours = 0;
+        }
+
+        // Format naar HH:MM:SS
+        const hh = hours.toString().padStart(2, "0");
+        const mm = minutes.toString().padStart(2, "0");
+        const ss = seconds.toString().padStart(2, "0");
+
+        document.querySelector(
+          ".perronscherm-text17"
+        ).textContent = `${hh}:${mm}:${ss}`;
+      }
+
+      // Timer elke seconde
+      setInterval(updateClock, 1000);
+    </script>
+
+    <style data-tag="reset-style-sheet">
+      html {
+        line-height: 1.15;
+      }
+      body {
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+        -webkit-font-smoothing: antialiased;
+      }
+      p,
+      li,
+      ul,
+      pre,
+      div,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      figure,
+      blockquote,
+      figcaption {
+        margin: 0;
+        padding: 0;
+      }
+      button {
+        background-color: transparent;
+      }
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+      }
+      button,
+      select {
+        text-transform: none;
+      }
+      button,
+      [type="button"],
+      [type="reset"],
+      [type="submit"] {
+        appearance: button;
+        color: inherit;
+      }
+      button::-moz-focus-inner,
+      [type="button"]::-moz-focus-inner,
+      [type="reset"]::-moz-focus-inner,
+      [type="submit"]::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+      }
+      button:-moz-focus,
+      [type="button"]:-moz-focus,
+      [type="reset"]:-moz-focus,
+      [type="submit"]:-moz-focus {
+        outline: 1px dotted Button;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      pre {
+        white-space: normal;
+      }
+      input {
+        padding: 2px 4px;
+      }
+      img {
+        display: block;
+      }
+      details {
+        display: block;
+        margin: 0;
+        padding: 0;
+      }
+      summary::-webkit-details-marker {
+        display: none;
+      }
+      [data-thq="accordion"] [data-thq="accordion-content"] {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        padding: 0;
+      }
+      [data-thq="accordion"]
+        details[data-thq="accordion-trigger"][open]
+        + [data-thq="accordion-content"] {
+        max-height: 1000vh;
+      }
+      details[data-thq="accordion-trigger"][open]
+        summary
+        [data-thq="accordion-icon"] {
+        transform: rotate(180deg);
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="style_perronscherm.css" />
+    <div>
+      <link href="index_perronscherm.css" rel="stylesheet" />
+
+      <div class="perronscherm-container1">
+        <div class="perronscherm-perronscherm">
+          <img
+            src="img_perronscherm/rectangle293229-hmg2-600h.png"
+            alt="Rectangle293229"
+            class="perronscherm-rectangle291"
+          />
+          <img
+            src="img_perronscherm/maskgroup11433-2bp-600h.png"
+            alt="Maskgroup11433"
+            class="perronscherm-maskgroup1"
+          />
+          <span class="perronscherm-text10">
+            <span class="perronscherm-text11">Deze trein stopt in:</span>
+            <span class="perronscherm-text12"></span>
+            <br />
+            <span
+              >Brus-Noord / Brux-Nord &#9679; Brus-Centraal / Brux-Central</span
+            >
+          </span>
+          <span class="perronscherm-text15">Brussel-Zuid / Bruxelles-Midi</span>
+          <span class="perronscherm-text16">IC24</span>
+          <img
+            src="img_perronscherm/rectangle53229-gmbs-400h.png"
+            class="perronscherm-rectangle51"
+          />
+          <img
+            src="img_perronscherm/rectangle53230-2xa-200h.png"
+            alt="Rectangle53230"
+            class="perronscherm-rectangle52"
+          />
+          <img
+            src="img_perronscherm/rectangle263230-tmy-200h.png"
+            alt="Rectangle263230"
+            class="perronscherm-rectangle26"
+          />
+          <img
+            src="img_perronscherm/rectangle283230-xuf-200h.png"
+            alt="Rectangle283230"
+            class="perronscherm-rectangle28"
+          />
+          <img
+            src="img_perronscherm/rectangle273230-410d-200h.png"
+            alt="Rectangle273230"
+            class="perronscherm-rectangle27"
+          />
+          <img
+            src="img_perronscherm/rectangle303230-4ngh-200h.png"
+            alt="Rectangle303230"
+            class="perronscherm-rectangle30"
+          />
+          <img
+            src="img_perronscherm/rectangle293230-02p-200h.png"
+            alt="Rectangle293230"
+            class="perronscherm-rectangle292"
+          />
+          <span class="perronscherm-text17">06:00:12</span>
+          <span class="perronscherm-text18">06:04</span>
+          <img
+            src="img_perronscherm/vector3231-sh05.svg"
+            alt="Vector3231"
+            class="perronscherm-vector"
+          />
+          <span class="perronscherm-text19">Perron 9</span>
+          <span class="perronscherm-text20">
+            <span class="perronscherm-text21">De</span>
+            <span class="perronscherm-text22">eerste klas plaatsen</span>
+            <span class="perronscherm-text23">bevinden zich in:</span>
+            <span class="perronscherm-text24">Rijtuig 1</span>
+            <span class="perronscherm-text25">-</span>
+            <span class="perronscherm-text26">Rijtuig 4</span>
+            <br class="perronscherm-text27" />
+            <span class="perronscherm-text28">Les</span>
+            <span class="perronscherm-text29">sièges de première classe</span>
+            <span class="perronscherm-text30">sont situés dans:</span>
+            <span class="perronscherm-text31">AUTO 1 - AUTO 4</span>
+          </span>
+          <div class="perronscherm-component181">
+            <span class="perronscherm-text32">+22</span>
+            <span class="perronscherm-text33">06:04</span>
+            <span class="perronscherm-text34">
+              Antwerp-Berchem / Anvers-Berchem &#9679; Sint-Niklaas
+            </span>
+            <span class="perronscherm-text35">
+              Antwerp-Centraal / Anvers-Central
+            </span>
+          </div>
+          <div class="perronscherm-component182">
+            <span class="perronscherm-text36">08:14</span>
+            <span class="perronscherm-text37">Aalst</span>
+            <span class="perronscherm-text38">Gent-Sint-Pieters</span>
+          </div>
+          <div class="perronscherm-component30">
+            <span class="perronscherm-text39">10:50</span>
+            <span class="perronscherm-text40">Aarschot</span>
+            <span class="perronscherm-text41">Leuven</span>
+          </div>
+          <div class="perronscherm-component19">
+            <span class="perronscherm-text42">07:26</span>
+            <span class="perronscherm-text43">
+              Aarschot
+            </span>
+            <span class="perronscherm-text44">Leuven</span>
+          </div>
+          <div class="perronscherm-component28">
+            <span class="perronscherm-text45">10:26</span>
+            <span class="perronscherm-text46">
+              Antwerp-Berchem / Anvers-Berchem &#9679; Sint-Niklaas
+            </span>
+            <span class="perronscherm-text47">Antwerp-Centraal / Anvers-Central</span>
+          </div>
+          <div class="perronscherm-component20">
+            <span class="perronscherm-text48">09:45</span>
+            <span class="perronscherm-text49">Aarschot</span>
+            <span class="perronscherm-text50">Leuven</span>
+          </div>
+          <div class="perronscherm-component21">
+            <span class="perronscherm-text51">09:20</span>
+            <span class="perronscherm-text52">Antwerp-Berchem / Anvers-Berchem &#9679; Sint-Niklaas</span>
+            <span class="perronscherm-text53">Antwerp-Centraal / Anvers-Central</span>
+          </div>
+          <div class="perronscherm-component22">
+            <span class="perronscherm-text54">09:03</span>
+            <span class="perronscherm-text55">
+              Brus-Noord / Brux-Nord &#9679; Brus-Centraal / Brux-Central
+            </span>
+            <span class="perronscherm-text56">Brussel-Zuid / Bruxelles-Midi</span>
+          </div>
+          <div class="perronscherm-component31">
+            <span class="perronscherm-text57">11:00</span>
+            <span class="perronscherm-text58">
+              Aalst
+            </span>
+            <span class="perronscherm-text59">Gent-Sint-Pieters</span>
+          </div>
+          <div class="perronscherm-component23">
+            <span class="perronscherm-text60">10:00</span>
+            <span class="perronscherm-text61">
+              Aalst
+            </span>
+            <span class="perronscherm-text62">Gent-Sint-Pieters</span>
+          </div>
+          <div class="perronscherm-component29">
+            <span class="perronscherm-text63">10:15</span>
+            <span class="perronscherm-text64">
+              Brus-Noord / Brux-Nord &#9679; Brus-Centraal / Brux-Central
+            </span>
+            <span class="perronscherm-text65">
+              Brussel-Zuid / Bruxelles-Midi
+            </span>
+          </div>
+        </div>
+              <path
+                d="M9.1017 4.64355H2.17867C0.711684 4.64355 -0.477539 5.79975 -0.477539 7.22599V13.9567C-0.477539 15.3829 0.711684 16.5391 2.17867 16.5391H9.1017C10.5687 16.5391 11.7579 15.3829 11.7579 13.9567V7.22599C11.7579 5.79975 10.5687 4.64355 9.1017 4.64355Z"
+                fill="#B23ADE"
+              ></path>
+              <path
+                d="M10.9733 12.7878C14.4208 12.7878 17.2156 10.0706 17.2156 6.71886C17.2156 3.3671 14.4208 0.649963 10.9733 0.649963C7.52573 0.649963 4.73096 3.3671 4.73096 6.71886C4.73096 10.0706 7.52573 12.7878 10.9733 12.7878Z"
+                fill="#FF5C5C"
+              ></path>
+              <path
+                d="M17.7373 13.3654C19.1497 14.1588 19.1497 15.4634 17.7373 16.2493L10.0865 20.5387C8.67402 21.332 7.51855 20.6836 7.51855 19.0968V10.5141C7.51855 8.92916 8.67402 8.2807 10.0865 9.07221L17.7373 13.3654Z"
+                fill="#2874DE"
+              ></path>
+  </body>
+</html>

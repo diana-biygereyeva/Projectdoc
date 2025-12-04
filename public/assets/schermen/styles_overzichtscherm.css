@@ -1,0 +1,206 @@
+body {
+  margin: 0;
+  background: #000;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.screen {
+  position: relative;
+  width: 1365px;
+  height: 662px;
+  margin: auto;
+  background: #fff;
+  overflow: hidden;
+}
+
+/* TOPBAR */
+.topbar {
+  position: relative;
+  width: 100%;
+  height: 84px;
+  background: #0b0b0b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-group {
+  position: absolute;
+  left: 18px;
+  top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.info-circle {
+  width: 54px;
+  height: 54px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.info-circle .material-icons {
+  color: #000;
+  font-size: 28px;
+}
+
+.title {
+  color: #fff;
+  font-size: 34px;
+  font-weight: 700;
+  margin-left: 30px;
+}
+
+.date {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 29px;
+}
+
+.clock {
+  position: absolute;
+  right: 2px;
+  top: 14px;
+  width: 230px;
+  height: 56px;
+  background: #b60000;
+  border-bottom-left-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  color: #fff;
+  font-size: 34px;
+  font-weight: 700;
+  padding-right: 40px;
+}
+
+/* KOP KOLOMMEN */
+.col-header {
+  display: flex;
+  align-items: center;
+  background: #f4d155;
+  height: 70px;
+  font-size: 28px;
+  font-weight: 700;
+  padding-left: 34px;
+}
+
+.col { text-align: left; }
+
+.col-nr { width: 120px; }
+.col-bestemming { width: 700px; }
+.col-status { width: 220px; }
+.col-tijd { width: 160px; }
+.col-perron { width: 80px; }
+
+/* RIJEN */
+.rows {
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  height: 74px;
+  font-size: 24px;
+  padding-left: 34px;
+  text-align: left;
+}
+
+.white { background: #fff; }
+.alt { background: #fff6d9; }
+
+.nr { width: 120px; font-weight: 600; }
+.destination { width: 700px; font-weight: 700; font-size: 28px; }
+.line2 { display: block; font-size: 14px; color: #666; }
+
+.status { width: 220px; font-weight: 500; }
+.tijd { width: 160px; font-weight: 700; }
+.delay { color: #c00; font-size: 18px; margin-left: 4px;}
+.perron { width: 80px; font-weight: 700; }
+
+/* RODE MELDING DIRECT TEGEN DE LAATSTE RIJ */
+.bottom-alert {
+  width: 79%;
+  height: 64px;
+  background: #b40000;
+  border-bottom-right-radius: 60px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  padding-left: 155px;
+  gap: 12px;
+}
+
+.bottom-wrapper {
+  width: 100%;
+  height: 64px;
+  background: #000;        /* vult de achtergrond achter de radius */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.triangle {
+  width: 42px;
+  height: 42px;
+  background: #ffdfdf;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.triangle .material-icons {
+  color: #b40000;
+  font-size: 28px;
+}
+
+.alert-flip {
+  height: 30px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+.alert-inner {
+  display: block;
+  animation: alertShow 9s linear infinite;
+}
+
+.alert-inner div {
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+@keyframes alertShow {
+  0%   { margin-top: 0; }
+  20%  { margin-top: 0; }
+  25%  { margin-top: -30px; }
+  45%  { margin-top: -30px; }
+  50%  { margin-top: -60px; }
+  70%  { margin-top: -60px; }
+  75%  { margin-top: -90px; }
+  95%  { margin-top: -90px; }
+  100% { margin-top: 0; }
+}
+
+

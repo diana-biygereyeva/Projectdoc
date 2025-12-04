@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=1365, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Overzichtsscherm</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<link rel="stylesheet" href="styles_overzichtscherm.css">
+
+
+</head>
+<body>
+  <div class="screen">
+
+    <div class="topbar">
+      <div class="left-group">
+        <div class="info-circle"><span class="material-icons">info</span></div>
+        <div class="title">Vertrek</div>
+      </div>
+      <div class="date">Maandag, 20 oktober</div>
+      <div class="clock" id="digitalClock">06:00:12</div>
+    </div>
+
+    <div class="col-header">
+      <div class="col col-nr">nr</div>
+      <div class="col col-bestemming">bestemming</div>
+      <div class="col col-status">status</div>
+      <div class="col col-tijd">tijd</div>
+      <div class="col col-perron">perron</div>
+    </div>
+
+    <div class="rows">
+      <div class="row white">
+        <div class="nr">IC24</div>
+        <div class="destination">Brussel-Midi / Bruxelles-Midi
+          <span class="line2">Brus-Noord / Brux-Nord • Brus-Centraal / Brux-Central</span>
+        </div>
+        <div class="status">Komt aan</div>
+        <div class="tijd">06:04</div>
+        <div class="perron">9</div>
+      </div>
+
+      <div class="row alt">
+        <div class="nr">S1</div>
+        <div class="destination">Nivelles / Nijvel
+          <span class="line2">Brus-Centraal / Brux-Central</span>
+        </div>
+        <div class="status">Aan perron</div>
+        <div class="tijd">06:10</div>
+        <div class="perron">5</div>
+      </div>
+
+      <div class="row white">
+        <div class="nr">IC24</div>
+        <div class="destination">Antwerp-Centraal / Anvers-Central
+          <span class="line2">Antwerp-Berchem / Anvers-Berchem • Beveren • Sint-Niklaas</span>
+        </div>
+        <div class="status">Vertraging</div>
+        <div class="tijd">06:04 <span class="delay">+22</span></div>
+        <div class="perron">9</div>
+      </div>
+
+      <div class="row alt">
+        <div class="nr">IC16</div>
+        <div class="destination">Eupen
+          <span class="line2">Luik-Guillemins / Liège-Guillemins</span>
+        </div>
+        <div class="status">Komt aan</div>
+        <div class="tijd">06:32</div>
+        <div class="perron">3</div>
+      </div>
+
+      <div class="row white">
+        <div class="nr">IC13</div>
+        <div class="destination">Namen / Namur
+          <span class="line2">Charleroi-Zuid / Charleroi-Sud</span>
+        </div>
+        <div class="status">Vertraging</div>
+        <div class="tijd">07:04 <span class="delay">+10</span></div>
+        <div class="perron">8</div>
+      </div>
+
+      <div class="row alt">
+        <div class="nr">S8</div>
+        <div class="destination">Blankenberge
+          <span class="line2">Brugge / Bruges • Aalter / Aeltre</span>
+        </div>
+        <div class="status">Aan perron</div>
+        <div class="tijd">07:04</div>
+        <div class="perron">4</div>
+      </div>
+    </div>
+
+   <div class="bottom-wrapper">
+  <div class="bottom-alert">
+    <div class="triangle"><span class="material-icons">warning</span></div>
+    <div>Brussel-Midi / Bruxelles-Midi - Treinsplitsing 1<sup>ste</sup> en laatste rijtuig</div>
+  </div>
+</div>
+
+  <script>
+  (function() {
+    const el = document.getElementById('digitalClock');
+    let h = 6, m = 0, s = 12;
+    function pad(n){return n<10?'0'+n:n;}
+    function tick(){
+      s++;
+      if(s>=60){s=0;m++;}
+      if(m>=60){m=0;h++;}
+      if(h>=24){h=0;}
+      el.textContent = pad(h)+':'+pad(m)+':'+pad(s);
+    }
+    setInterval(tick,1000);
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ontwerpdocumentatie Diana Biygereyeva 1GDM2</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/flexboxes.css" />
+    <link rel="stylesheet" href="assets/nav.css" />
+    <link rel="stylesheet" href="assets/typography.css" />
+    <link href="dist/output.css" rel="stylesheet" />
+  </head>
+
+  <body class="bg-gray-100 text-gray-800 min-h-screen p-10">
+    <!-- NAVBAR -->
+    <nav
+      id="navbar"
+      class="bg-white shadow fixed top-0 left-0 w-full z-50 transition-all duration-300"
+    >
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <!-- Logo -->
+          <div class="text-xl font-bold text-wlate-600">
+            <a href="index.html" data-link="home">
+              <h1>Lost in Tra(i)nslation</h1>
+            </a>
+          </div>
+
+          <!-- Mobile menu button -->
+          <button id="nav-toggle" class="md:hidden text-2xl focus:outline-none">
+            ☰
+          </button>
+
+          <!-- Desktop links -->
+          <ul id="nav-links" class="hidden md:flex space-x-4 text-gray-700">
+            <li>
+              <a href="week 01.html" class="nav-link hover:text-slate-100"
+                >Week 01</a
+              >
+            </li>
+            <li>
+              <a href="week 02.html" class="nav-link hover:text-slate-100"
+                >Week 02</a
+              >
+            </li>
+            <li>
+              <a href="week 03.html" class="nav-link hover:text-slate-100"
+                >Week 03</a
+              >
+            </li>
+            <li>
+              <a href="week 04.html" class="nav-link hover:text-slate-100"
+                >Week 04</a
+              >
+            </li>
+            <li>
+              <a href="week 05.html" class="nav-link hover:text-slate-100"
+                >Week 05</a
+              >
+            </li>
+            <li>
+              <a href="week 06.html" class="nav-link hover:text-slate-100"
+                >Week 06</a
+              >
+            </li>
+            <li>
+              <a href="week 07.html" class="nav-link hover:text-slate-100"
+                >Week 07</a
+              >
+            </li>
+            <li>
+              <a href="week 08.html" class="nav-link hover:text-slate-100"
+                ><s>Week 08</s></a
+              >
+            </li>
+            <li>
+              <a href="week 09.html" class="nav-link hover:text-slate-100"
+                >Week 09</a
+              >
+            </li>
+            <li>
+              <a href="week 10.html" class="nav-link hover:text-slate-100"
+                >Week 10</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Mobile dropdown -->
+        <ul
+          id="nav-mobile"
+          class="hidden md:hidden flex flex-col space-y-2 pb-4 text-gray-700 font-medium overflow-hidden max-h-0 transition-all duration-300"
+        >
+          <li>
+            <a href="week 01.html" class="nav-link hover:text-slate-100"
+              >Week 01</a
+            >
+          </li>
+          <li>
+            <a href="week 02.html" class="nav-link hover:text-slate-100"
+              >Week 02</a
+            >
+          </li>
+          <li>
+            <a href="week 03.html" class="nav-link hover:text-slate-100"
+              >Week 03</a
+            >
+          </li>
+          <li>
+            <a href="week 04.html" class="nav-link hover:text-slate-100"
+              >Week 04</a
+            >
+          </li>
+          <li>
+            <a href="week 05.html" class="nav-link hover:text-slate-100"
+              >Week 05</a
+            >
+          </li>
+          <li>
+            <a href="week 06.html" class="nav-link hover:text-slate-100"
+              >Week 06</a
+            >
+          </li>
+          <li>
+            <a href="week 07.html" class="nav-link hover:text-slate-100"
+              >Week 07</a
+            >
+          </li>
+          <li>
+            <a href="week 08.html" class="nav-link hover:text-slate-100"
+              ><s>Week 08</s></a
+            >
+          </li>
+          <li>
+            <a href="week 09.html" class="nav-link hover:text-slate-100"
+              >Week 09</a
+            >
+          </li>
+          <li>
+            <a href="week 10.html" class="nav-link hover:text-slate-100"
+              >Week 10</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Add padding so page content isn't hidden behind the fixed nav -->
+    <div class="pt-24"></div>
+
+    <!-- Page content -->
+    <div class="container max-w-4xl mx-auto">
+      <div class="title">
+        <h1>Ontwerpdocumentatie</h1>
+        <h2>Prototyping Tools</h2>
+        <br />
+      </div>
+
+      <!-- ACCORDIONS -->
+      <div class="space-y-4">
+        <!-- Accordion 1 -->
+        <div class="border border-gray-300 rounded">
+          <button
+            class="w-full flex justify-between items-center p-4 bg-white font-semibold accordion-btn"
+          >
+            <strong
+              >De meest recente versies op dit moment.
+              <mark>(niet interactieve scherm)</mark></strong
+            >
+            <span class="text-xl">+</span>
+          </button>
+          <div class="accordion-content hidden p-4 bg-gray-50 text-gray-700">
+            <div>
+              <br />
+              <a href="public/assets/schermen/overzichtscherm.html"
+                >Overzichtsscherm</a
+              ><br />
+              <a href="public/assets/schermen/perronscherm.html">Perronscherm</a
+              ><br />
+              <a href="public/assets/schermen/wagonindelingsscherm.html"
+                >Wagonindelingsscherm</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion 2 -->
+        <div class="border border-gray-300 rounded">
+          <button
+            class="w-full flex justify-between items-center p-4 bg-white font-semibold accordion-btn"
+          >
+            <strong
+              >De meest recente versies op dit moment.
+              <mark>(interactieve scherm)</mark></strong
+            >
+            <span class="text-xl">+</span>
+          </button>
+          <div class="accordion-content hidden p-4 bg-gray-50 text-gray-700">
+            <a
+              href="https://www.figma.com/design/2jDPdwS682WixnVWT0lYmH/2526_PRTT_BiygereyevaDiana_Midi-prototypes-v?node-id=164-533&t=O2xaZ30KgK7UUeG0-1"
+            >
+              Mobiele schermen in figma
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT for accordion toggle and nav -->
+    <script>
+      document.querySelectorAll(".accordion-btn").forEach((button) => {
+        button.addEventListener("click", () => {
+          const content = button.nextElementSibling;
+          content.classList.toggle("hidden");
+
+          // Update + / -
+          const icon = button.querySelector("span");
+          icon.textContent = content.classList.contains("hidden") ? "+" : "-";
+        });
+      });
+
+      const navToggle = document.getElementById("nav-toggle");
+      const navMobile = document.getElementById("nav-mobile");
+      const navLinks = document.querySelectorAll(".nav-link");
+      const navbar = document.getElementById("navbar");
+
+      /* -------------------------
+        1) SLIDE-DOWN MOBILE MENU
+      ------------------------- */
+      navToggle.addEventListener("click", () => {
+        if (navMobile.classList.contains("hidden")) {
+          navMobile.classList.remove("hidden");
+          navMobile.style.maxHeight = navMobile.scrollHeight + "px";
+        } else {
+          navMobile.style.maxHeight = "0px";
+          setTimeout(() => navMobile.classList.add("hidden"), 300);
+        }
+      });
+
+      /* -------------------------
+        2) ACTIVE LINK HIGHLIGHTING
+      ------------------------- */
+      function setActiveLink(name) {
+        navLinks.forEach((link) => {
+          if (link.dataset.link === name) {
+            link.classList.add("text-blue-600", "font-semibold");
+          } else {
+            link.classList.remove("text-blue-600", "font-semibold");
+          }
+        });
+      }
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          const page = link.dataset.link;
+          setActiveLink(page);
+        });
+      });
+
+      /* -------------------------
+        3) AUTO-HIDE ON SCROLL
+      ------------------------- */
+      let lastScrollTop = 0;
+      window.addEventListener("scroll", () => {
+        const scrollPos =
+          window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollPos > lastScrollTop && scrollPos > 50) {
+          navbar.style.transform = "translateY(-100%)";
+        } else {
+          navbar.style.transform = "translateY(0)";
+        }
+        lastScrollTop = scrollPos <= 0 ? 0 : scrollPos;
+      });
+    </script>
+
+    <br />
+    <footer>© 2025 Diana Biygereyeva 1GDM2</footer>
+    <canvas id="gradient-canvas"></canvas>
+  </body>
+</html>
